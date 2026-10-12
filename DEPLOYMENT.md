@@ -6,7 +6,7 @@ This file is updated after publication attempts; it must not claim a live deploy
 
 ## Current status
 
-- Destination public repository: https://github.com/dukedog666/10-12 . Its existing license and initial history are preserved.
+- Published public repository: https://github.com/dukedog666/10-12 . All 19 project files were uploaded to `main` and their Git blob hashes matched the local files. Its existing license and initial history are preserved.
 - Local application and EDA notebook: executed and verified; see `VALIDATION.md`.
 - Public Cloud app: **not yet verified or deployed**. Browser navigation to Streamlit Cloud timed out, so no public app URL is claimed.
 - Local preview: http://127.0.0.1:8515/ (available only while the local server is running).
