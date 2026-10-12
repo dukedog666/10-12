@@ -1,0 +1,110 @@
+{
+  "dataset_url": "https://www.kaggle.com/datasets/ihelon/coffee-sales",
+  "source_audits": [
+    {
+      "filename": "index_1.csv",
+      "bytes": 279369,
+      "sha256": "2a600445a1836da436a3e890e1e1cce0ecf279d369d3a9e280db3ea0d06b594e",
+      "rows": 3636,
+      "columns": [
+        "date",
+        "datetime",
+        "cash_type",
+        "card",
+        "money",
+        "coffee_name"
+      ],
+      "dtypes": {
+        "date": "object",
+        "datetime": "object",
+        "cash_type": "object",
+        "card": "object",
+        "money": "float64",
+        "coffee_name": "object"
+      },
+      "missing": {
+        "date": 0,
+        "datetime": 0,
+        "cash_type": 0,
+        "card": 89,
+        "money": 0,
+        "coffee_name": 0
+      },
+      "duplicates_all_fields": 0,
+      "date_min": "2024-03-01",
+      "date_max": "2025-03-23",
+      "observed_days": 381,
+      "dates_without_records": [
+        "2024-05-01",
+        "2024-05-04",
+        "2024-05-05",
+        "2024-11-27",
+        "2025-01-01",
+        "2025-01-19",
+        "2025-01-23"
+      ],
+      "drink_categories": 8,
+      "payment_counts": {
+        "card": 3547,
+        "cash": 89
+      },
+      "sales_source_units": 115431.58,
+      "nonpositive_amounts": 0
+    },
+    {
+      "filename": "index_2.csv",
+      "bytes": 14962,
+      "sha256": "793d2eaff83354112c274c6c8ab53af0198196b782892a213773b62283813149",
+      "rows": 262,
+      "columns": [
+        "date",
+        "datetime",
+        "cash_type",
+        "money",
+        "coffee_name"
+      ],
+      "dtypes": {
+        "date": "object",
+        "datetime": "object",
+        "cash_type": "object",
+        "money": "float64",
+        "coffee_name": "object"
+      },
+      "missing": {
+        "date": 0,
+        "datetime": 0,
+        "cash_type": 0,
+        "money": 0,
+        "coffee_name": 0
+      },
+      "duplicates_all_fields": 2,
+      "date_min": "2025-02-08",
+      "date_max": "2025-03-23",
+      "observed_days": 41,
+      "dates_without_records": [
+        "2025-03-04",
+        "2025-03-06",
+        "2025-03-13"
+      ],
+      "drink_categories": 30,
+      "payment_counts": {
+        "card": 182,
+        "cash": 80
+      },
+      "sales_source_units": 6890.0,
+      "nonpositive_amounts": 0
+    }
+  ],
+  "normalized_cross_file_matches": 0,
+  "selection": "Preserve both sources in one small CSV; the app selects one source at a time because their business relationship is unconfirmed.",
+  "published_rows": 3898,
+  "published_csv_bytes": 254446,
+  "transformations": [
+    "Add explicit source provenance",
+    "Remove anonymous card identifiers",
+    "Trim drink-name whitespace",
+    "Sort timestamps; retain all 3636 primary and 262 secondary records, including two unresolved duplicate rows"
+  ],
+  "currency": "Unverified; report in source units",
+  "license_reported_by_kaggle": "CC0: Public Domain"
+}
